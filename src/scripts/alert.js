@@ -1,20 +1,20 @@
-const parent = document.querySelector('.toggle-form_container')
-const child = document.querySelector('.toggle-list')
-const descendant = document.querySelector('.toggle-list_item ')
-const hidden = document.querySelector('#hidden')
+const hero = document.querySelector('.hero-section')
+const vanGogh = document.querySelector('.escape-section')
+const program = document.querySelector('.program-section')
+const questions = document.querySelector('.questions-section')
 
-parent.addEventListener('click', () => {
-	alert('Parent click handler')
+hero.addEventListener('click', () => {
+	alert('Hero!')
 })
 
-child.addEventListener('click', () => {
-	alert('Child click handler')
+vanGogh.addEventListener('click', () => {
+	alert('Escape.')
 })
 
-descendant.addEventListener('click', () => {
-	alert('Descendant click handler')
+program.addEventListener('click', () => {
+	alert('Program for kids.')
 })
 
-hidden.addEventListener('click', () => {
-	alert('Hidden click handler')
+questions.addEventListener('click', () => {
+	alert('Questions and toggle packs.')
 })

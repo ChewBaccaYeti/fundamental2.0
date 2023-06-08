@@ -1,0 +1,250 @@
+.program-section {
+  position: relative;
+  z-index: 4;
+
+    height: 1080px;
+}
+
+.program-text {
+  z-index: 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 120px;
+  width: 100%;
+  background-color: #EEF4FF;
+}
+
+.program-article {
+  display: flex;
+  justify-content: center;
+
+  width: 1120px;
+  height: 72px;
+
+  font-family: var(--Montserrat);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 72px;
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  color: #111029;
+}
+
+.program-paragraph {
+  display: flex;
+  justify-content: center;
+
+  width: 641px;
+  height: 94px;
+
+  font-family: var(--Hind);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #6B6B6B;
+}
+
+.program-container_above {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 20px 218px 116px 218px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--background-color);
+}
+
+.program-list_above {}
+
+.arrow-container {}
+
+.arrow_above-1 {
+  position: absolute;
+  top: -100px;
+  left: -120px;
+}
+
+.arrow_above-2 {
+  position: absolute;
+  top: -80px;
+  left: -120px;
+}
+
+.program-container_below {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 116px 218px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--background-color);
+}
+
+.program-list_below {}
+
+.arrow_below-1 {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+
+.arrow_below-2 {
+  position: absolute;
+  top: -80px;
+  left: -120px;
+}
+
+.program-list_item {}
+
+.program-list_icon {}
+
+.program-list_article {
+  font-family: var(--Poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #111029;
+
+}
+
+.program-list_paragraph {
+  font-family: var(--Hind);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #423D3D;
+}
+
+.hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+    width: 405px;
+    height: 245px;
+}
+
+.hand_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/hand_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 405px;
+    height: 245px;
+}
+
+.hat_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/hat_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.forkspoon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 405px;
+    height: 245px;
+}
+
+.forkspoon_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/forkspoon_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.gamepad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 405px;
+    height: 245px;
+}
+
+.gamepad_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/gamepad_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cake {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 405px;
+    height: 245px;
+}
+
+.cake_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/cake_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.note {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 405px;
+    height: 245px;
+}
+
+.note_container {
+  width: 108px;
+  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/svg/svg_folder/note_rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

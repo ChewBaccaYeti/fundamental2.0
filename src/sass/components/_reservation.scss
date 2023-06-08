@@ -1,0 +1,125 @@
+.reservation-section {
+  position: relative;
+  z-index: 5;
+    background-color: #EEF4FF;
+}
+
+.reservation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    padding-top: 99px;
+    margin: 0 400px 113px;
+    gap: 24px;
+}
+
+.reservation-article {
+  width: 1120px;
+
+  font-family: var(--Poppins);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  color: #111029;
+}
+
+.reservation-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+
+    width: 668px;
+    height: 42px;
+}
+
+.dates_left {}
+
+.dates_right {}
+
+.reservation-paragraph {
+  font-family: var(--Hind);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #6B6B6B;
+}
+
+.reservation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    width: 1646px;
+    margin: 0 auto 121px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+
+.reservation-days {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+    width: 1646px;
+    height: 82px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    gap: 20px;
+    width: 235px;
+    height: 100px;
+    padding: 25px;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+
+    width: 1646px;
+    background-color: var(--accent-color);
+}
+
+.time-list {
+  display: flex;
+  align-items: center;
+
+    width: inherit;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+
+    width: 235px;
+    height: 82px;
+    padding-left: 12px;
+
+    border-top: 2px solid #4C40F7;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.time:hover {
+  background-color: gainsboro;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}

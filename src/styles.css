@@ -416,9 +416,7 @@ box-shadow: var(--box-shadow);
 
 /* Video section -------------------------------------------------------------------*/
 
-.video-section {
-  /* position: relative; */
-}
+.video-section {}
 
 .video-container {
   display: flex;
@@ -484,9 +482,7 @@ box-shadow: var(--box-shadow);
   -moz-box-shadow: 0 0 10px -1px rgba(76,64,247,0.75);
 }
 
-.video-puddles_container {
-  /* position: relative; */
-}
+.video-puddles_container {}
 
 .ellipse {
   position: absolute;
@@ -512,14 +508,14 @@ box-shadow: var(--box-shadow);
 
 /* Program section -------------------------------------------------------------------*/
 
-.program_section {
+.program-section {
   position: relative;
   z-index: 4;
 
     height: 1080px;
 }
 
-.program_text {
+.program-text {
   z-index: 4;
   position: relative;
   display: flex;
@@ -531,7 +527,7 @@ box-shadow: var(--box-shadow);
   background-color: #EEF4FF;
 }
 
-.program_article {
+.program-article {
   display: flex;
   justify-content: center;
 
@@ -550,7 +546,7 @@ box-shadow: var(--box-shadow);
   color: #111029;
 }
 
-.program_paragraph {
+.program-paragraph {
   display: flex;
   justify-content: center;
 
@@ -568,7 +564,7 @@ box-shadow: var(--box-shadow);
   color: #6B6B6B;
 }
 
-.program_container_above {
+.program-container_above {
   position: relative;
   z-index: 3;
   margin: 0;
@@ -580,18 +576,9 @@ box-shadow: var(--box-shadow);
     background-color: var(--background-color);
 }
 
-.program_list_above {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.program-list_above {}
 
-    gap: 54px;
-    list-style: none;
-}
-
-.arrow-container {
-  position: relative;
-}
+.arrow-container {}
 
 .arrow_above-1 {
   position: absolute;
@@ -605,7 +592,7 @@ box-shadow: var(--box-shadow);
   left: -120px;
 }
 
-.program_container_below {
+.program-container_below {
   position: relative;
   z-index: 3;
   margin: 0;
@@ -617,14 +604,7 @@ box-shadow: var(--box-shadow);
     background-color: var(--background-color);
 }
 
-.program_list_below {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-    gap: 54px;
-    list-style: none;
-}
+.program-list_below {}
 
 .arrow_below-1 {
   position: absolute;
@@ -638,11 +618,11 @@ box-shadow: var(--box-shadow);
   left: -120px;
 }
 
-.program_list_item {}
+.program-list_item {}
 
-.program_list_icon {}
+.program-list_icon {}
 
-.program_list_article {
+.program-list_article {
   font-family: var(--Poppins);
     font-style: normal;
     font-weight: 600;
@@ -654,7 +634,7 @@ box-shadow: var(--box-shadow);
 
 }
 
-.program_list_paragraph {
+.program-list_paragraph {
   font-family: var(--Hind);
     font-style: normal;
     font-weight: 300;

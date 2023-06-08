@@ -1,0 +1,151 @@
+.hero-section {
+  position: relative;
+
+    height: 1080px;
+    padding: 1px;
+
+    background-color: var(--background-color);
+}
+
+.hero-container {
+  position: relative;
+
+    margin: 35px auto;
+    width: 1673px;
+    height: 1010px;
+    background-image: url(./images/svg/svg_folder/bg_elemts_and_forms.svg);
+    background-repeat: no-repeat;
+}
+
+.hero-images {
+  position: absolute;
+
+    width: 1102px;
+    height: 884px;
+}
+
+.purplePuddle {
+  z-index: 1;
+  position: absolute;
+
+    width: 708px;
+    height: 685px;
+    left: 1050px;
+    top: 105px;
+    transform: rotate(-5deg);
+}
+
+.yellowPuddle {
+  z-index: 2;
+  position: absolute;
+
+    width: 607px;
+    height: 506px;
+    left: 860px;
+    top: 300px;
+    transform: rotate(-1.07deg);
+}
+
+.arrow-group {
+  z-index: 3;
+  position: absolute;
+
+    width: 338px;
+    height: 315px;
+    left: 1450px;
+    top: 285px;
+}
+
+.hero-photo {
+  z-index: 4;
+  position: absolute;
+
+    width: 722px;
+    height: 760px;
+    left: 955px;
+    top: 74px;
+  }
+
+.hero-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+    width: 617px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+
+    width: 617px;
+    gap: 30px;
+    padding: 280px 0 79px 240px;
+}
+
+.hero-text_article {
+    margin: 0;
+    font-family: var(--Montserrat);
+    font-style: normal;
+    width: 617px;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 84px;
+    color: #261E45;
+}
+
+.hero-text_paragraph {
+    margin: 0;
+    font-family: var(--Hind);
+    font-style: normal;
+    width: 617px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #191818;
+}
+
+.numbers {
+  width: 616px;
+  padding-left: 240px;
+}
+
+.numbers-list_number {
+  display:flex;
+  list-style: none;
+
+    width: 616px;
+    margin: 0;
+    padding: 0;
+    gap: 51px;
+}
+
+.numbers-list_number_item {
+    width: 144px;
+    font-family: var(--Montserrat);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 140%;
+}
+
+.numbers-list_text {
+  display:flex;
+  list-style: none;
+
+    width: 616px;
+    margin: 0;
+    padding: 0;
+    gap: 67px;
+}
+
+.numbers-list_text_item {
+    font-family: var(--NotoSans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #5C5C5C;
+}
