@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Landing page for escape room" />
+		<title>Landing Page</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" href="/public/styles.css" />
+		<link rel="stylesheet" href="/src/styles.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+			integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+
+	<body class="body">
+		<header id="header-container">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+		<script id="header-template" type="text/x-handlebars-template">
+			<header
+				class='header-section flex h-20 items-center justify-center bg-black'
+			>
+				<div class='header-container'>
+					<nav class='header-navigation flex items-center'>
+						<ul class='header-list flex list-none flex-row gap-9 leading-5'>
+							{{#each items}}
+								<li class='header-list_item'><a
+										href='{{url}}'
+									>{{label}}</a></li>
+							{{/each}}
+						</ul>
+						<a href='#'><button
+								type='button'
+								class='header-button flex h-12 w-56 items-center'
+							>{{buttonText}}</button></a>
+					</nav>
+				</div>
+			</header>
+		</script>
+		<script src="./src/scripts/utils/headerLoader.js"></script>
+
+		<main>
+		<button
+				id="scrollToTopButton"
+				class="fixed bottom-6 right-6 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-xl text-white shadow-md transition duration-300 ease-in-out hover:bg-gray-600"
+			>
+				<svg
+					class="h-6 w-6 rotate-0 transform"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 4 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M19 14l-7-7m0 0l-7 7m7-7v18"
+					></path>
+				</svg>
+        <script src="./src/scripts/utils/scrollToTop.js"></script>
+		</button>
+
+    <section class="hero-section">
+      <div id="hero-container"></div>
+      <script src="./src/scripts/partials/heroSection.js"></script>
+    </section>
+
+		<section class="escape-section">
+			<!-- <div class="escape-arrow_container"></div>
+			<svg class="escape-arrow" width="2171.43px" height="356.29px">
+				<use href="./src/images/svg/sprite-devs.svg#icon-escape"></use>
+			</svg> -->
+			<div class="escape-container">
+				<img
+					class="escape-img"
+					src="./src/images/ananieva_a_scene_where_van_gogh_is_smiling_and_happy_in_a_pixar_2068550e-8383-4f95-afc4-fcf60ad52b97 1.png"
+					alt="Van Gogh with kids"
+				/>
+				<div class="escape-info">
+					<div class="escape-texts">
+						<h1 class="escape-article">Ескейп стая</h1>
+						<p class="escape-paragraph">
+							Изберете един различен начин детето Ви да се забавлява с
+							приятелите си. Нашият луд Гений Ви кани в ескейп стая “Лудостта на
+							Гения“. Той ще отведе децата Ви в 19. век, когато е живял и ще ги
+							потопи в света на изкуството.
+						</p>
+						<a href="#"
+							><button type="button" class="button">Резервирай сега!</button></a
+						>
+					</div>
+					<ul class="escape-list">
+						<li class="escape-list_item">
+							<div class="escape-list_container">
+								<svg width="32px" height="43px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-escape_hat"
+									></use>
+								</svg>
+								<h2>Парти Зала</h2>
+								<p>От 1 да 6 часа</p>
+							</div>
+						</li>
+						<li class="escape-list_item">
+							<div class="escape-list_container">
+								<svg width="44px" height="39px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-escape_people"
+									></use>
+								</svg>
+								<h2>2 - 30</h2>
+								<p>Деца / Гости</p>
+							</div>
+						</li>
+						<li class="escape-list_item">
+							<div class="escape-list_container">
+								<svg width="35px" height="43px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-escape_time"
+									></use>
+								</svg>
+								<h2>60</h2>
+								<p>Минути / Игра</p>
+							</div>
+						</li>
+						<li class="escape-list_item">
+							<div class="escape-list_container">
+								<svg width="47px" height="42px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-escape_fork"
+									></use>
+								</svg>
+								<h2>60</h2>
+								<p>Минути / Игра</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="video-section relative">
+			<div class="video-container">
+				<div class="video-text">
+					<h6>Нашата атмосфера</h6>
+					<h1>Вижте как се случва магията при нас</h1>
+				</div>
+				<div class="player">
+					<iframe
+						class="rounded-xl"
+						id="vimeo-player"
+						src="https://player.vimeo.com/video/236203659"
+						width="1307px"
+						height="650px"
+						allowfullscreen
+						allow="autoplay; encrypted-media"
+					></iframe>
+					<script src="./src/scripts/utils/video.js" type="module"></script>
+				</div>
+				<div class="video-puddles_container relative">
+					<svg class="ellipse" width="605px" height="176px">
+						<use href="./src/images/svg/svg_folder/Ellipse.svg"></use>
+					</svg>
+					<svg class="video-yellow" width="1590px" height="1462px">
+						<use href="./src/images/svg/sprite-devs.svg#icon-video_yellow"></use>
+					</svg>
+					<svg class="video-purple" width="896.51px" height="1069.38px">
+						<use href="./src/images/svg/sprite-devs.svg#icon-video_purple"></use>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+		<section class="program_section">
+			<div class="program_text">
+				<h3 class="program_article">Нашата програма</h3>
+				<p class="program_paragraph">
+					We serve many customers, ranging from small businesses, medium
+					entrepreneurs, to world-renowned companies.
+				</p>
+			</div>
+
+			<div class="program_container_above">
+				<ul class="program_list_above">
+					<li class="program_list_item">
+						<div class="hand">
+							<div class="hand_container">
+								<svg class="program_list_icon" width="45.9px" height="43.52px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-hand"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Посрещане на гости, инструктаж преди играта
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="arrow-container">
+							<svg class="arrow_above-1" width="266.95px" height="27.67px">
+								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
+							</svg>
+						</div>
+					</li>
+
+					<li class="program_list_item">
+						<div class="hat">
+							<div class="hat_container">
+								<svg class="program_list_icon" width="34.18px" height="43px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-hat"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Игри и забавления в ESCAPE ROOMS
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="arrow-container">
+							<svg class="arrow_above-2" width="266.95px" height="27.67px">
+								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
+							</svg>
+						</div>
+					</li>
+
+					<li class="program_list_item">
+						<div class="forkspoon">
+							<div class="forkspoon_container">
+								<svg class="program_list_icon" width="50.59px" height="45px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-forkspoon"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Почерпка, игри и дискотека в залата за парти Here
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="program_container_below">
+				<ul class="program_list_below">
+					<li class="program_list_item">
+						<div class="gamepad">
+							<div class="gamepad_container">
+								<svg class="program_list_icon" width="51.25px" height="36.9px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-gamepad"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Анимация с професионални аниматори
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="arrow-container">
+							<svg class="arrow_below-1" width="266.95px" height="27.67px">
+								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
+							</svg>
+						</div>
+					</li>
+
+					<li class="program_list_item">
+						<div class="cake">
+							<div class="cake_container">
+								<svg class="program_list_icon" width="50.59px" height="45px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-cake"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Торта и специални поздравления
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="arrow-container">
+							<svg class="arrow_below-2" width="266.95px" height="27.67px">
+								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
+							</svg>
+						</div>
+					</li>
+
+					<li class="program_list_item">
+						<div class="note">
+							<div class="note_container">
+								<svg class="program_list_icon" width="43px" height="43px">
+									<use href="./src/images/svg/sprite-devs.svg#icon-note"></use>
+								</svg>
+							</div>
+							<h4 class="program_list_article">
+								Снимки с персонална уеб страница
+							</h4>
+							<p class="program_list_paragraph">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="questions-section">
+			<div class="questions-container"></div>
+				<div class="questions-text">
+					<h6 class="questions-article">На място</h6>
+					<p class="questions-paragraph">Усетете атмосфера</p>
+				</div>
+
+				<div class="questions-photos">
+					<div class="photos-kids">
+						<img width="353" src="./src/images/group1.png" alt="Partyhard" />
+						<img width="352" src="./src/images/cake-pic.png" alt="B-day cake" />
+					</div>
+					<div class="photos-kids">
+						<img
+							width="353"
+							src="./src/images/two-kids.png"
+							alt="Boy and girl posing"
+						/>
+						<img
+							width="353"
+							src="./src/images/group2.png"
+							alt="Kids football club b-day"
+						/>
+					</div>
+					<div class="photos-kids">
+						<img width="352" src="./src/images/group3.png" alt="Kitchen" />
+						<img width="353" src="./src/images/group4.png" alt="Boys smiling" />
+					</div>
+				</div>
+
+				<div class="toggle-form_container">
+					<div class="questions-text">
+						<h6 class="questions-article">Често задавани въпроси</h6>
+						<h3 class="questions-paragraph">Остана нещо неясно?</h3>
+					</div>
+
+					<div class="questions-puddles_container">
+						<svg class="questions_purple" width="734.14px" height="1005.89px">
+							<use
+								href="./src/images/svg/sprite-devs.svg#icon-questions_purple"
+							></use>
+						</svg>
+						<svg class="questions_green" width="894px" height="993px">
+							<use
+								href="./src/images/svg/sprite-devs.svg#icon-questions_green"
+							></use>
+						</svg>
+					</div>
+
+					<ul class="toggle-list">
+						<li
+							class="toggle-list_item w-1120 h-240 flex items-center justify-between rounded-lg border-2 border-zinc-300 bg-white p-8"
+						>
+							<div class="toggle-content">
+								<p class="toggle-paragraph">
+									What are the services provided to customers?
+								</p>
+								<div class="toggle-paragraph_content">
+									<p class="toggle-text">
+										Hello, we provide various services to help your business
+										grow and develop. We help provide ideas, create designs,
+										develop websites and mobile applications, provide support
+										for the growth of business ideas, to help customers market
+										their products online through the marketplace.
+									</p>
+								</div>
+							</div>
+							<button onclick="toggle(this)">
+								<svg class="vector" width="12" height="7">
+									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li
+							class="toggle-list_item w-1120 h-240 flex items-center justify-between rounded-lg border-2 border-zinc-300 bg-white p-8"
+						>
+							<div class="toggle-content">
+								<p class="toggle-paragraph">
+									How can I submit a proposal for cooperation?
+								</p>
+								<div class="toggle-paragraph_content">
+									<p class="toggle-text">
+										Hello, we provide various services to help your business
+										grow and develop. We help provide ideas, create designs,
+										develop websites and mobile applications, provide support
+										for the growth of business ideas, to help customers market
+										their products online through the marketplace.
+									</p>
+								</div>
+							</div>
+							<button onclick="toggle(this)">
+								<svg class="vector" width="12" height="7">
+									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li
+							class="toggle-list_item w-1120 h-240 flex items-center justify-between rounded-lg border-2 border-zinc-300 bg-white p-8"
+						>
+							<div class="toggle-content">
+								<p class="toggle-paragraph">
+									I come from a faraway place, can collaboration be done full
+									time online through several meeting applications?
+								</p>
+								<div class="toggle-paragraph_content">
+									<p class="toggle-text">
+										Hello, we provide various services to help your business
+										grow and develop. We help provide ideas, create designs,
+										develop websites and mobile applications, provide support
+										for the growth of business ideas, to help customers market
+										their products online through the marketplace.
+									</p>
+								</div>
+							</div>
+							<button onclick="toggle(this)">
+								<svg class="vector" width="12" height="7">
+									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li
+							class="toggle-list_item w-1120 h-240 flex items-center justify-between rounded-lg border-2 border-zinc-300 bg-white p-8"
+						>
+							<div class="toggle-content">
+								<p class="toggle-paragraph">
+									How do I get the payment complete?
+								</p>
+								<div class="toggle-paragraph_content">
+									<p class="toggle-text">
+										Hello, we provide various services to help your business
+										grow and develop. We help provide ideas, create designs,
+										develop websites and mobile applications, provide support
+										for the growth of business ideas, to help customers market
+										their products online through the marketplace.
+									</p>
+								</div>
+							</div>
+							<button onclick="toggle(this)">
+								<svg class="vector" width="12" height="7">
+									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li
+							class="toggle-list_item w-1120 h-240 flex items-center justify-between rounded-lg border-2 border-zinc-300 bg-white p-8"
+						>
+							<div class="toggle-content">
+								<p class="toggle-paragraph">
+									How long can the collaboration last?
+								</p>
+								<div class="toggle-paragraph_content">
+									<p class="toggle-text">
+										Hello, we provide various services to help your business
+										grow and develop. We help provide ideas, create designs,
+										develop websites and mobile applications, provide support
+										for the growth of business ideas, to help customers market
+										their products online through the marketplace.
+									</p>
+								</div>
+							</div>
+							<button onclick="toggle(this)">
+								<svg class="vector" width="12" height="7">
+									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<script src="./src/scripts/utils/toggleDropDown.js"></script>
+		</section>
+
+		<section class="reservation-section">
+			<div class="reservation-text">
+				<h2 class="reservation-article">Направи резервация</h2>
+				<div class="reservation-dates">
+					<button type="button" class="dates_left">
+						<svg width="32px" height="32px">
+							<use
+								href="./src/images/svg/sprite-devs.svg#icon-ArrowCircleLeft"
+							></use>
+						</svg>
+					</button>
+					<time class="reservation-paragraph">03.04.2023 — 09.04.2023</time>
+					<button type="button" class="dates_right">
+						<svg width="32px" height="32px">
+							<use
+								href="./src/images/svg/sprite-devs.svg#icon-ArrowCircleRight"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="reservation-container">
+				<div class="reservation-days">
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						03.04.2023
+						<br />
+						Понеделник
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						04.04.2023
+						<br />
+						Вторник
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						05.04.2023
+						<br />
+						Сряда
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						06.04.2023
+						<br />
+						Четвъртък
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						07.04.2023
+						<br />
+						Петък
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						08.04.2023
+						<br />
+						Събота
+					</div>
+					<div class="day">
+						<svg width="24px" height="22px">
+							<use href="./src/images/svg/sprite-devs.svg#icon-fi_calendar"></use>
+						</svg>
+						09.04.2023
+						<br />
+						Неделя
+					</div>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+				<div class="reservation">
+					<ul class="time-list">
+						<li class="time">10:00</li>
+						<li class="time">12:00</li>
+						<li class="time">14:00</li>
+						<li class="time">16:00</li>
+						<li class="time">18:00</li>
+						<li class="time">20:00</li>
+						<li class="time">22:00</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="info-container">
+				<form class="info-form">
+					<div class="column-container">
+						<div class="info-column_container">
+							<ul class="info-list">
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Електронна поща</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="Електронна поща"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Име</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="Име"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Телефонен номер</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="Телефонен номер"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Име на рожденика</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="Име на рожденика"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="info-column_container">
+							<ul class="info-list">
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Възраст, която навърша</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="Възраст, която навърша"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Брой играчи</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Език на играта</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<label>
+										<p class="info-list_paragraph">Деца до 14 години</p>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="info-column_container">
+							<ul class="info-list">
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Наем на дъполнителна стая</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Наем на залата за:</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Кетъринг</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+
+								<li class="info-list_item">
+									<p class="info-list_paragraph">Аниматор</p>
+									<label>
+										<input
+											class="info-input"
+											placeholder="First name"
+											type="text"
+											name="input"
+										/>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="solo-input_container">
+						<label
+							><p>Код за отстъпка</p>
+							<input
+								class="solo-input"
+								placeholder="Код за отстъпка"
+								type="text"
+								name="input"
+							/>
+						</label>
+						<label
+							><p>Забележки и въпроси</p>
+							<input
+								class="solo-input"
+								placeholder="Забележки и въпроси "
+								type="text"
+								name="input"
+							/>
+						</label>
+					</div>
+
+					<ul class="checkboxes-list">
+						<li class="checkboxes-item">
+							<label>
+								<input
+									class="checkbox w-522"
+									type="checkbox"
+									name="form-checkbox"
+									value="General settings"
+								/>
+								<p>Прочетох и се запознах с общите условия за ползване.</p>
+							</label>
+						</li>
+
+						<li class="checkboxes-item">
+							<label>
+								<input
+									class="checkbox w-627"
+									type="checkbox"
+									name="form-checkbox"
+									value="Data"
+								/>
+								<p>
+									Съгласен съм данните ми да бъдат използвани за маркетингови
+									цели.
+								</p>
+							</label>
+						</li>
+
+						<li class="checkboxes-item">
+							<label>
+								<input
+									class="checkbox w-627"
+									type="checkbox"
+									name="form-checkbox"
+									value="PI security"
+								/><a
+									href="https://www.questhouse.bg/prava-za-zashtita-na-lichnite-danni"
+									>Запознат съм с правата за защита на личните данни.</a
+								>
+							</label>
+						</li>
+					</ul>
+				</form>
+				<div class="preFooter-container">
+					<a href="#"
+						><button type="button" class="button footer-btn">
+							Запази своя час
+						</button></a
+					>
+				</div>
+			</div>
+		</section>
+
+    </main>
+		<footer></footer>
+	</body>
+</html>
