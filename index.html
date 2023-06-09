@@ -15,7 +15,8 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 		<link rel="stylesheet" href="./public/styles.css" />
-		<link rel="stylesheet" href="./src/styles.css" />
+		<!-- <link rel="stylesheet" href="./src/styles.css" /> -->
+		<link rel="stylesheet" href="./sass/main.scss" />
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
 			integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
@@ -26,32 +27,33 @@
 
 	<body class="body">
 		<header id="header-container">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-		<script id="header-template" type="text/x-handlebars-template">
-			<header
-				class='header-section flex h-20 items-center justify-center bg-black'
-			>
-				<div class='header-container'>
-					<nav class='header-navigation flex items-center'>
-						<ul class='header-list flex list-none flex-row gap-9 leading-5'>
-							{{#each items}}
-								<li class='header-list_item'><a
-										href='{{url}}'
-									>{{label}}</a></li>
-							{{/each}}
-						</ul>
-						<a href='#'><button
-								type='button'
-								class='header-button flex h-12 w-56 items-center'
-							>{{buttonText}}</button></a>
-					</nav>
-				</div>
-			</header>
-		</script>
-		<script src="./src/scripts/utils/headerLoader.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+			<script id="header-template" type="text/x-handlebars-template">
+				<header
+					class='header-section flex h-20 items-center justify-center bg-black'
+				>
+					<div class='header-container'>
+						<nav class='header-navigation flex items-center'>
+							<ul class='header-list flex list-none flex-row gap-9 leading-5'>
+								{{#each items}}
+									<li class='header-list_item'><a
+											href='{{url}}'
+										>{{label}}</a></li>
+								{{/each}}
+							</ul>
+							<a href='#'><button
+									type='button'
+									class='header-button flex h-12 w-56 items-center'
+								>{{buttonText}}</button></a>
+						</nav>
+					</div>
+				</header>
+			</script>
+			<script src="./src/scripts/utils/headerLoader.js"></script>
+		</header>
 
 		<main>
-		<button
+			<button
 				id="scrollToTopButton"
 				class="fixed bottom-6 right-6 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-xl text-white shadow-md transition duration-300 ease-in-out hover:bg-gray-600"
 			>
@@ -68,178 +70,208 @@
 						d="M19 14l-7-7m0 0l-7 7m7-7v18"
 					></path>
 				</svg>
-        <script src="./src/scripts/utils/scrollToTop.js"></script>
-		</button>
+				<script src="./src/scripts/utils/scrollToTop.js"></script>
+			</button>
 
-    <section class="hero-section">
-      <div id="hero-container"></div>
-      <script src="./src/scripts/partials/heroSection.js"></script>
-    </section>
+			<section class="hero-section">
+				<div id="hero-container"></div>
+				<script src="./src/scripts/partials/heroSection.js"></script>
+			</section>
 
-		<section class="escape-section">
-      <div id="escape-container"></div>
-      <script src="./src/scripts/partials/escapeSection.js"></script>
-    </section>
+			<section class="escape-section">
+				<div id="escape-container"></div>
+				<script src="./src/scripts/partials/escapeSection.js"></script>
+			</section>
 
-		<section class="video-section relative">
-      <div id="video-container"></div>
-			<script src="./src/scripts/partials/videoSection.js"></script>
-		</section>
+			<section class="video-section relative">
+				<div id="video-container"></div>
+				<script src="./src/scripts/partials/videoSection.js"></script>
+			</section>
 
-		<section class="program-section">
-			<div class="program-text">
-				<h3 class="program-article">Нашата програма</h3>
-				<p class="program-paragraph">
-					We serve many customers, ranging from small businesses, medium
-					entrepreneurs, to world-renowned companies.
-				</p>
-			</div>
+			<section class="program-section">
+				<div class="program-text">
+					<h3 class="program-article">Нашата програма</h3>
+					<p class="program-paragraph">
+						We serve many customers, ranging from small businesses, medium
+						entrepreneurs, to world-renowned companies.
+					</p>
+				</div>
 
-			<div class="program-container_above">
-				<ul class="program-list_above flex justify-center items-center list-none gap-14">
-					<li class="program-list_item flex justify-center items-center">
-						<div class="hand">
-							<div class="hand_container">
-								<svg class="program-list_icon" width="45.9px" height="43.52px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-hand"></use>
+				<div class="program-container_above">
+					<ul
+						class="program-list_above flex list-none items-center justify-center gap-14"
+					>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="hand">
+								<div class="hand_container">
+									<svg
+										class="program-list_icon"
+										width="45.9px"
+										height="43.52px"
+									>
+										<use
+											href="./src/images/svg/sprite-devs.svg#icon-hand"
+										></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Посрещане на гости, инструктаж преди играта
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="arrow-container relative">
+								<svg class="arrow_above-1" width="266.95px" height="27.67px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"
+									></use>
 								</svg>
 							</div>
-							<h4 class="program-list_article">
-								Посрещане на гости, инструктаж преди играта
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</p>
-						</div>
-					</li>
+						</li>
 
-					<li>
-						<div class="arrow-container relative">
-							<svg class="arrow_above-1" width="266.95px" height="27.67px">
-								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
-							</svg>
-						</div>
-					</li>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="hat">
+								<div class="hat_container">
+									<svg class="program-list_icon" width="34.18px" height="43px">
+										<use href="./src/images/svg/sprite-devs.svg#icon-hat"></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Игри и забавления в ESCAPE ROOMS
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking.
+								</p>
+							</div>
+						</li>
 
-					<li class="program-list_item flex justify-center items-center">
-						<div class="hat">
-							<div class="hat_container">
-								<svg class="program-list_icon" width="34.18px" height="43px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-hat"></use>
+						<li>
+							<div class="arrow-container relative">
+								<svg class="arrow_above-2" width="266.95px" height="27.67px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"
+									></use>
 								</svg>
 							</div>
-							<h4 class="program-list_article">
-								Игри и забавления в ESCAPE ROOMS
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking.
-							</p>
-						</div>
-					</li>
+						</li>
 
-					<li>
-						<div class="arrow-container relative">
-							<svg class="arrow_above-2" width="266.95px" height="27.67px">
-								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
-							</svg>
-						</div>
-					</li>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="forkspoon">
+								<div class="forkspoon_container">
+									<svg class="program-list_icon" width="50.59px" height="45px">
+										<use
+											href="./src/images/svg/sprite-devs.svg#icon-forkspoon"
+										></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Почерпка, игри и дискотека в залата за парти Here
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 
-					<li class="program-list_item flex justify-center items-center">
-						<div class="forkspoon">
-							<div class="forkspoon_container">
-								<svg class="program-list_icon" width="50.59px" height="45px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-forkspoon"></use>
+				<div class="program-container_below">
+					<ul
+						class="program-list_below flex list-none items-center justify-center gap-14"
+					>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="gamepad">
+								<div class="gamepad_container">
+									<svg
+										class="program-list_icon"
+										width="51.25px"
+										height="36.9px"
+									>
+										<use
+											href="./src/images/svg/sprite-devs.svg#icon-gamepad"
+										></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Анимация с професионални аниматори
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="arrow-container relative">
+								<svg class="arrow_below-1" width="266.95px" height="27.67px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"
+									></use>
 								</svg>
 							</div>
-							<h4 class="program-list_article">
-								Почерпка, игри и дискотека в залата за парти Here
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
+						</li>
 
-			<div class="program-container_below">
-				<ul class="program-list_below flex justify-center items-center list-none gap-14">
-					<li class="program-list_item flex justify-center items-center">
-						<div class="gamepad">
-							<div class="gamepad_container">
-								<svg class="program-list_icon" width="51.25px" height="36.9px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-gamepad"></use>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="cake">
+								<div class="cake_container">
+									<svg class="program-list_icon" width="50.59px" height="45px">
+										<use
+											href="./src/images/svg/sprite-devs.svg#icon-cake"
+										></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Торта и специални поздравления
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking.
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="arrow-container relative">
+								<svg class="arrow_below-2" width="266.95px" height="27.67px">
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"
+									></use>
 								</svg>
 							</div>
-							<h4 class="program-list_article">
-								Анимация с професионални аниматори
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</p>
-						</div>
-					</li>
+						</li>
 
-					<li>
-						<div class="arrow-container relative">
-							<svg class="arrow_below-1" width="266.95px" height="27.67px">
-								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-79"></use>
-							</svg>
-						</div>
-					</li>
-
-					<li class="program-list_item flex justify-center items-center">
-						<div class="cake">
-							<div class="cake_container">
-								<svg class="program-list_icon" width="50.59px" height="45px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-cake"></use>
-								</svg>
+						<li class="program-list_item flex items-center justify-center">
+							<div class="note">
+								<div class="note_container">
+									<svg class="program-list_icon" width="43px" height="43px">
+										<use
+											href="./src/images/svg/sprite-devs.svg#icon-note"
+										></use>
+									</svg>
+								</div>
+								<h4 class="program-list_article">
+									Снимки с персонална уеб страница
+								</h4>
+								<p class="program-list_paragraph">
+									It is a long established fact that a reader will be distracted
+									by the readable content of a page when looking at its layout.
+								</p>
 							</div>
-							<h4 class="program-list_article">
-								Торта и специални поздравления
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking.
-							</p>
-						</div>
-					</li>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-					<li>
-						<div class="arrow-container relative">
-							<svg class="arrow_below-2" width="266.95px" height="27.67px">
-								<use href="./src/images/svg/sprite-devs.svg#icon-Ellipse-81"></use>
-							</svg>
-						</div>
-					</li>
-
-					<li class="program-list_item flex justify-center items-center">
-						<div class="note">
-							<div class="note_container">
-								<svg class="program-list_icon" width="43px" height="43px">
-									<use href="./src/images/svg/sprite-devs.svg#icon-note"></use>
-								</svg>
-							</div>
-							<h4 class="program-list_article">
-								Снимки с персонална уеб страница
-							</h4>
-							<p class="program-list_paragraph">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="questions-section">
-			<div class="questions-container"></div>
+			<section class="questions-section">
+				<div class="questions-container"></div>
 				<div class="questions-text">
 					<h6 class="questions-article">На място</h6>
 					<p class="questions-paragraph">Усетете атмосфера</p>
@@ -307,7 +339,9 @@
 							</div>
 							<button onclick="toggle(this)">
 								<svg class="vector" width="12" height="7">
-									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Vector"
+									></use>
 								</svg>
 							</button>
 						</li>
@@ -331,7 +365,9 @@
 							</div>
 							<button onclick="toggle(this)">
 								<svg class="vector" width="12" height="7">
-									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Vector"
+									></use>
 								</svg>
 							</button>
 						</li>
@@ -356,7 +392,9 @@
 							</div>
 							<button onclick="toggle(this)">
 								<svg class="vector" width="12" height="7">
-									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Vector"
+									></use>
 								</svg>
 							</button>
 						</li>
@@ -380,7 +418,9 @@
 							</div>
 							<button onclick="toggle(this)">
 								<svg class="vector" width="12" height="7">
-									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Vector"
+									></use>
 								</svg>
 							</button>
 						</li>
@@ -404,22 +444,23 @@
 							</div>
 							<button onclick="toggle(this)">
 								<svg class="vector" width="12" height="7">
-									<use href="./src/images/svg/sprite-devs.svg#icon-Vector"></use>
+									<use
+										href="./src/images/svg/sprite-devs.svg#icon-Vector"
+									></use>
 								</svg>
 							</button>
 						</li>
 					</ul>
 				</div>
-			</div>
-			<script src="./src/scripts/utils/toggleDropDown.js"></script>
-		</section>
+				<script src="./src/scripts/utils/toggleDropDown.js"></script>
+			</section>
 
-		<section class="reservation-section">
-      <div id="reservation-container"></div>
-      <script src="./src/scripts/partials/reservationSection.js"></script>
-    </section>
-    <!-- <script src="./src/scripts/alert.js"></script> -->
-    </main>
+			<section class="reservation-section">
+				<div id="reservation-container"></div>
+				<script src="./src/scripts/partials/reservationSection.js"></script>
+			</section>
+			<!-- <script src="./src/scripts/alert.js"></script> -->
+		</main>
 		<footer></footer>
 	</body>
 </html>

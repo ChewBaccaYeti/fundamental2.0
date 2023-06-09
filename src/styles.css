@@ -814,7 +814,7 @@ box-shadow: var(--box-shadow);
 
     width: 1122px;
     height: 980px;
-    margin: 0px auto;
+    margin: 0 auto;
     gap: 30px;
 }
 

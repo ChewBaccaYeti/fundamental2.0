@@ -1,0 +1,108 @@
+@import 'animate.css';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: "NotoSans";
+    src: url('./fonts/NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: "Hind";
+    src:url('./fonts/Hind-Light.ttf'),
+        url('./fonts/Hind-Regular.ttf'),
+        url('./fonts/Hind-SemiBold.ttf');
+}
+@font-face {
+    font-family: "Poppins";
+    src:url('./fonts/Poppins-Medium.ttf'),
+        url('./fonts/Poppins-Regular.ttf'),
+        url('./fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: "Montserrat";
+    src:url('./fonts/Montserrat-Bold.ttf'),
+        url('./fonts/Montserrat-ExtraBold.ttf'),
+        url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --Roboto:'Roboto', sans-serif;
+  --NotoSans: 'NotoSans', sans-serif;
+  --Hind: 'Hind', sans-serif;
+  --Poppins: 'Poppins', sans-serif;
+  --Montserrat: 'Montserrat', sans-serif;
+
+  --accent-color:  #FFFFFF;
+  --background-color: #EEF4FF;
+  --button-color: #2BB673;
+  --button-hover: #27a568;
+  --button-focus: #1d7c4e;
+
+  --duration: 150ms;
+  --longer: 550ms;
+  --timing-function: cubic-bezier(.51,.5,.39,.4);
+  --box-shadow: 0px 0px 5px 0px #000000;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+}
+
+footer {
+  background-color: var(--background-color);
+}
+
+.button {
+  position: relative;
+  z-index: 10;
+  margin-top: 31px;
+  width: 230px;
+  height: 52px;
+  border-radius: 23px;
+
+  font-family: var(--Montserrat);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: var(--accent-color);
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
+}
+.button:hover {
+background-color: var(--button-hover);
+-webkit-box-shadow: var(--box-shadow);
+box-shadow: var(--box-shadow);
+transition-property: var(--box-shadow);
+transition-duration: var(--duration);
+transition-timing-function: var(--timing-function);
+}
+.button:focus {
+cursor: pointer;
+background-color: var(--button-focus);
+-webkit-box-shadow: var(--box-shadow);
+box-shadow: var(--box-shadow);
+}
