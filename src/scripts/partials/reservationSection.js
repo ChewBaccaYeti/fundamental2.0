@@ -83,79 +83,79 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
     <div class="reservation">
       <ul class="time-list">
-        <li class="time">10:00</li>
-        <li class="time">12:00</li>
-        <li class="time">14:00</li>
-        <li class="time">16:00</li>
-        <li class="time">18:00</li>
-        <li class="time">20:00</li>
-        <li class="time">22:00</li>
+        <li class="time"><p class="clock">10:00</p></li>
+        <li class="time"><p class="clock">12:00</p></li>
+        <li class="time"><p class="clock">14:00</p></li>
+        <li class="time"><p class="clock">16:00</p></li>
+        <li class="time"><p class="clock">18:00</p></li>
+        <li class="time"><p class="clock">20:00</p></li>
+        <li class="time"><p class="clock">22:00</p></li>
       </ul>
     </div>
   </div>
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Брой играчи"
                   type="text"
                   name="input"
                 />
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Език на играта"
                   type="text"
                   name="input"
                 />
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p class="info-list_paragraph">Деца до 14 години</p>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Деца до 14 години"
                   type="text"
                   name="input"
                 />
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Наем на дъполнителна стая"
                   type="text"
                   name="input"
                 />
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Залата"
                   type="text"
                   name="input"
                 />
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Кетъринг"
                   type="text"
                   name="input"
                 />
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <label>
                 <input
                   class="info-input"
-                  placeholder="First name"
+                  placeholder="Аниматор"
                   type="text"
                   name="input"
                 />
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       <div class="solo-input_container">
         <label
-          ><p>Код за отстъпка</p>
+          ><p>Код з</p>а отстъпка</p>
           <input
             class="solo-input"
             placeholder="Код за отстъпка"
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
           />
         </label>
         <label
-          ><p>Забележки и въпроси</p>
+          ><p>Забел</p>ежки и въпроси</p>
           <input
             class="solo-input"
             placeholder="Забележки и въпроси "
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
               name="form-checkbox"
               value="General settings"
             />
-            <p>Прочетох и се запознах с общите условия за ползване.</p>
+            <p>Проче</p>тох и се запознах с общите условия за ползване.</p>
           </label>
         </li>
 
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function () {
               value="Data"
             />
             <p>
-              Съгласен съм данните ми да бъдат използвани за маркетингови
+    </p>          Съгласен съм данните ми да бъдат използвани за маркетингови
               цели.
             </p>
           </label>

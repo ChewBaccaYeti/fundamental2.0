@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       <use href="./src/images/svg/sprite-devs.svg#icon-arrowGroup_svg"></use>
                   </svg>
               </div>
-              <div class="hero_-nfo">
+              <div class="hero-info">
                   <div class="hero-text">
                       <h1 class="hero-text_article">Подари един Незабравим рожден ден</h1>
                       <p class="hero-text_paragraph">Искате да отпразнувате незабравим рожден ден на детето Ви? Искате да му подарите незабравими емоции? Изберете един различен начин детето Ви да се забавлява с приятелите си.</p>

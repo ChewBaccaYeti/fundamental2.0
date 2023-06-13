@@ -225,6 +225,12 @@ footer {
 }
 
 .hero-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: center;
+
   position: relative;
 
     margin: 35px auto;
@@ -323,12 +329,17 @@ footer {
 }
 
 .numbers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 616px;
-  padding-left: 240px;
+  padding: 0 0 152px 240px;
 }
 
 .numbers-list_number {
   display:flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 
     width: 616px;
@@ -338,7 +349,11 @@ footer {
 }
 
 .numbers-list_number_item {
-    width: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    width: 177px;
     font-family: var(--Montserrat);
     font-style: normal;
     font-weight: 800;
@@ -348,15 +363,22 @@ footer {
 
 .numbers-list_text {
   display:flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 
     width: 616px;
     margin: 0;
     padding: 0;
-    gap: 67px;
+    gap: 51px;
 }
 
 .numbers-list_text_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    width: 177px;
     font-family: var(--NotoSans);
     font-style: normal;
     font-weight: 400;
@@ -371,7 +393,32 @@ footer {
   .hero-section {
     width: 1315px;
   }
+  .hero-container {
+    display: flex;
 
+      width: 800px;
+      margin:0%;
+  }
+  .hero-images {
+      width: 1102px;
+      height: 884px;
+  }
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+
+      width: 617px;
+  }
+  .purplePuddle {
+      width: 708px;
+      height: 685px;
+      transform: rotate(-5deg);
+  }
+  .yellowPuddle {
+      width: 607px;
+      height: 506px;
+      transform: rotate(-1.07deg);
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1023px) {
@@ -1134,9 +1181,25 @@ footer {
     border-right: 1px solid gainsboro;
 }
 .time:hover {
-  background-color: gainsboro;
+  background-color: ghostwhite;
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+    padding: 4px 12px;
+    gap: 10px;
+    width: 75px;
+}
+.clock:hover {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #D4F8D3;
 }
 
 /* Info section -------------------------------------------------------------------*/
