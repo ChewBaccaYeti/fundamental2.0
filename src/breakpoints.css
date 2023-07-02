@@ -1,29 +1,94 @@
-/* Стилі для смартфонів (портретна орієнтація) */
-@media only screen and (max-width: 320px) {
-  /* Тут можна визначити стилі для смартфонів */
+@media (max-width: 640px) {
+  .button {
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
-/* Стилі для смартфонів (ландшафтна орієнтація) та планшетів */
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  /* Тут можна визначити стилі для смартфонів у ландшафтній орієнтації та планшетів */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .button {
+    width: 200px;
+    height: 48px;
+    border-radius: 21px;
+    font-size: 15px;
+    line-height: 19px;
+  }
 }
 
-/* Стилі для планшетів та невеликих ноутбуків */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Тут можна визначити стилі для планшетів та невеликих ноутбуків */
+@media (min-width: 1024px) {
 }
 
-/* Стилі для ноутбуків та комп'ютерів */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  /* Тут можна визначити стилі для ноутбуків та комп'ютерів */
+@media (max-width: 640px) {
+  .header-section {
+    width: 1315px;
+  }
+
+  .header-button {
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
-/* Стилі для великих моніторів та високороздільних телевізорів */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  /* Тут можна визначити стилі для великих моніторів та високороздільних телевізорів */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .header-section {
+    width: 1315px;
+  }
+
+  .header-button {
+    width: 200px;
+    height: 48px;
+    border-radius: 21px;
+    font-size: 15px;
+    line-height: 19px;
+  }
 }
 
-/* Стилі для дуже великих екранів (без брейкпоінта) */
-@media only screen and (min-width: 1201px) {
-  /* Тут можна визначити стилі для дуже великих екранів */
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    width: 1315px;
+  }
+  .hero-container {
+    display: flex;
+
+      width: 800px;
+      margin:0%;
+  }
+  .hero-images {
+      width: 1102px;
+      height: 884px;
+  }
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+
+      width: 617px;
+  }
+  .purplePuddle {
+      width: 708px;
+      height: 685px;
+      transform: rotate(-5deg);
+  }
+  .yellowPuddle {
+      width: 607px;
+      height: 506px;
+      transform: rotate(-1.07deg);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .hero-section {
+    width: 1315px;
+  }
+}
+
+@media (min-width: 1024px) {
 }

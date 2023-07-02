@@ -109,31 +109,6 @@ footer {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 640px) {
-  .button {
-    width: 180px;
-    height: 42px;
-    border-radius: 20px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1023px) {
-  .button {
-    width: 200px;
-    height: 48px;
-    border-radius: 21px;
-    font-size: 15px;
-    line-height: 19px;
-  }
-}
-
-@media (min-width: 1024px) {
-}
-
-
-
 /* Header section  -------------------------------------------------------------------*/
 
 .header-section {
@@ -180,37 +155,6 @@ footer {
   border-right: 1px solid #4C40F7;
   border-bottom: 1px solid #FFCC00;
   border-left: 1px solid #FFCC00;
-}
-
-@media (max-width: 640px) {
-  .header-section {
-    width: 1315px;
-  }
-
-  .header-button {
-    width: 180px;
-    height: 42px;
-    border-radius: 20px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1023px) {
-  .header-section {
-    width: 1315px;
-  }
-
-  .header-button {
-    width: 200px;
-    height: 48px;
-    border-radius: 21px;
-    font-size: 15px;
-    line-height: 19px;
-  }
-}
-
-@media (min-width: 1024px) {
 }
 
 /*  Hero section  -------------------------------------------------------------------*/
@@ -387,47 +331,6 @@ footer {
     text-align: center;
 
     color: #5C5C5C;
-}
-
-@media (max-width: 640px) {
-  .hero-section {
-    width: 1315px;
-  }
-  .hero-container {
-    display: flex;
-
-      width: 800px;
-      margin:0%;
-  }
-  .hero-images {
-      width: 1102px;
-      height: 884px;
-  }
-  .hero-info {
-    display: flex;
-    flex-direction: column;
-
-      width: 617px;
-  }
-  .purplePuddle {
-      width: 708px;
-      height: 685px;
-      transform: rotate(-5deg);
-  }
-  .yellowPuddle {
-      width: 607px;
-      height: 506px;
-      transform: rotate(-1.07deg);
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1023px) {
-  .hero-section {
-    width: 1315px;
-  }
-}
-
-@media (min-width: 1024px) {
 }
 
 /* Escape section -------------------------------------------------------------------*/
